@@ -79,18 +79,5 @@
 
     
 }
-- (void)testUrl{
-    
-    NSURL *url = [NSURL URLWithString:@"https://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel=15611111111"];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    request.HTTPMethod = @"GET";
-//    request.HTTPBody = [@"" dataUsingEncoding:NSUTF8StringEncoding];
-    
-    NSData *received = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-    NSString *str1 = [[NSString alloc]initWithData:received encoding:NSUTF8StringEncoding];
-    
-
-    WAIT
-}
 
 @end
